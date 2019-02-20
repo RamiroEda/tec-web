@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3 Tablas</title>
+    <style>
+        .center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Ejemplos de tablas</h2>
+    <h4>Tabla básica de 3x2</h4>
+    <table border="1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Dos ejemplos de linea expandida &lt;Rowspan&gt;</h4>
+    <table border="1">
+        <tr>
+            <td>Item 1</td>
+            <td rowspan="2">Item 2</td>
+            <td>Item 3</td>
+        </tr>
+        <tr>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td rowspan="2">Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+        <tr>
+            <td>Item 5</td>
+            <td>Item 6</td>
+            <td>Item 7</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Ejemplo de columna expandida &lt;colspan&gt;</h4>
+    <table border="1">
+        <tr>
+            <td>Item 1</td>
+            <td colspan="2">Item 2</td>
+        </tr>
+        <tr>
+            <td>Item 3</td>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Tabla con cabeceras &lt;th&gt;</h4>
+    <table border="1">
+        <tr>
+            <th>Head1</th>
+            <th>Head2</th>
+            <th>Head3</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Combinación de columna expandida y cabecera</h4>
+    <table border="1">
+        <tr>
+            <th colspan="2">Head1</th>
+            <th colspan="2">Head2</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Combinación de cabecera multiple y columnas expandidas</h4>
+    <table border="1">
+        <tr>
+            <th colspan="2">Head1</th>
+            <th colspan="2">Head2</th>
+        </tr>
+        <tr>
+            <th>Head3</th>
+            <th>Head4</th>
+            <th>Head5</th>
+            <th>Head6</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Cabeceras laterales</h4>
+    <table border="1">
+        <tr>
+            <th>Head1</th>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+        <tr>
+            <th>Head2</th>
+            <td>Item 4</td>
+            <td>Item 5</td>
+            <td>Item 6</td>
+        </tr>
+        <tr>
+            <th>Head3</th>
+            <td>Item 7</td>
+            <td>Item 8</td>
+            <td>Item 9</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Combinación de cabeceras laterales y lineas expandidas</h4>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Head1</th>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+        <tr>
+            <td>Item 4</td>
+            <td>Item 5</td>
+            <td>Item 6</td>
+        </tr>
+        <tr>
+            <th>Head2</th>
+            <td>Item 7</td>
+            <td>Item 8</td>
+            <td>Item 9</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Combinación de cabeceras laterales y superiores. Contenidos centrados, Título al pie</h4>
+    <table border="1" class="center center-text">
+        <tr>
+            <th></th>
+            <th>Table</th>
+            <th>Tr</th>
+            <th>Td</th>
+            <th>Th</th>
+            <th>Caption</th>
+        </tr>
+        <tr>
+            <th>Border</th>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th>Rowspan</th>
+            <td>-</td>
+            <td>-</td>
+            <td>X</td>
+            <td>X</td>
+            <td>-</td>
+        </tr>
+        <!-- XX como el album de LOONA. Preordene profe, este 19 de Febrero -->
+        <tr>
+            <th>Colspan</th>
+            <td>-</td>
+            <td>-</td>
+            <td>X</td>
+            <td>X</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th>Align</th>
+            <td>-</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <th>VAlign</th>
+            <td>-</td>
+            <td>-</td>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th>Width</th>
+            <td>X</td20>
+                <td>-</td>
+                <td>X</td>
+                <td>-</td>
+                <td>-</td>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <td>X</td>
+            <td>-</td>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th>Cellpadding</th>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th>Cellspacing</th>
+            <td>X</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <div class="center-text">Resumen de tablas</div>
+    <hr>
+    <h4>Ejemplo con todos los elementos y parámetros</h4>
+    <table border="1">
+        <tr>
+            <td></td>
+            <td rowspan="2"></td>
+            <th colspan="2">Media</th>
+        </tr>
+        <tr>
+            <td></td>
+            <th>Altura</th>
+            <th>Peso</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Sexo</th>
+            <th>Hombres</th>
+            <td>1.9</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <th>Mujeres</th>
+            <td>1.7</td>
+            <td>60</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Combinación de cabeceras laterales y lineas expandidas</h4>
+    <table border="1" class="center-text">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td colspan="2">D</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Tabla sin bordes</h4>
+    <table>
+        <tr>
+            <td>Item 1</td>
+            <td rowspan="2">Item 2</td>
+            <td>Item 3</td>
+        </tr>
+        <tr>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Tabla con bordes de 10 puntos</h4>
+    <table border="10">
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+        </tr>
+        <tr>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Dimensionado de celdas</h4>
+    <table border="1" cellspacing="0" cellpadding="10" class="center-text">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+</body>
+
+</html>

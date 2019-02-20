@@ -1,243 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EJE4</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Listas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .tabla1 {
-            border-color: rgb(238, 238, 238);
-            width: 100%;
-            border-style: solid;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .tabla1 * {
-            border-style: solid;
-            text-align: start;
-        }
-
-        .colored {
-            background-color: rgb(238, 238, 238);
-        }
-
-        .tabla2 {
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgb(160, 160, 160);
-            width: 100%;
-        }
-
-        .tabla2>thead {
-            background-color: #6C79DF;
-        }
-
-        .tabla2 * {
-            border-bottom: 1px solid rgb(200, 200, 200);
-            font-weight: 100;
-            text-align: start;
-        }
-
-        .title {
-            color: white !important;
-            font-weight: 400 !important;
-        }
-
-        .clicked {
-            background-color: #E13E9B !important;
-            color: white !important;
-        }
-
-        .selected-rowcol {
-            background-color: #FCEBF5;
+        .sin-marcas {
+            list-style-type: none;
         }
     </style>
 </head>
 
 <body>
-    <h2>Tablas en HTML</h2>
-    <div>
-        <table class="tabla1" border="1" cellspacing="0" cellpadding="10">
-            <tr class="colored">
-                <th>Compañía</th>
-                <th>Contacto</th>
-                <th>País</th>
-            </tr>
-            <tr>
-                <td>Mazda</td>
-                <td>Felipe Iturriaga Cortés</td>
-                <td>Bélgica</td>
-            </tr>
-            <tr class="colored">
-                <td>Nissan</td>
-                <td>Maria del Carmen García Ortiz</td>
-                <td>Italia</td>
-            </tr>
-            <tr>
-                <td>Toyota</td>
-                <td>Veronica Esparza Cordero</td>
-                <td>Singapur</td>
-            </tr>
-            <tr class="colored">
-                <td>Chevrolet</td>
-                <td>Shaila Nayeli Pérez Salinas</td>
-                <td>México</td>
-            </tr>
-            <tr>
-                <td>Renault</td>
-                <td>Rosendo Vázques Bañuelos</td>
-                <td>Alemania</td>
-            </tr>
-            <tr class="colored">
-                <td>Volvo</td>
-                <td>Daniel Israel Alaniz Hernandez</td>
-                <td>Francia</td>
-            </tr>
-            <tr>
-                <td>Jaguar</td>
-                <td>María Monserrat Neria Reyes</td>
-                <td>Inglaterra</td>
-            </tr>
-            <tr class="colored">
-                <td>Honda</td>
-                <td>MBE Koua Christophe Nojatchi</td>
-                <td>Noruega</td>
-            </tr>
-            <tr>
-                <td>Suzuki</td>
-                <td>Erik Saul Saúl Ramírez Ramírez</td>
-                <td>Dinamarca</td>
-            </tr>
-            <tr class="colored">
-                <td>KIA</td>
-                <td>Mauricio Berumen Jiménez</td>
-                <td>Japón</td>
-            </tr>
-        </table>
-    </div>
-    <br><br>
-    <h2>Selecciona una celda para colorear</h2>
-    <div>
-        <table class="tabla2" cellpadding="20" cellspacing="0">
-            <thead>
-                <tr class="title">
-                    <th></th>
-                    <th>SUNDAY</th>
-                    <th>MONDAY</th>
-                    <th>TUESDAY</th>
-                    <th>WEDNESDAY</th>
-                    <th>THURSDAY</th>
-                    <th>FRIDAY</th>
-                    <th>SATURDAY</th>
-                </tr>
-            </thead>
-            <tbody id="body-t2">
-                <tr>
-                    <th>Lawrence Scott</td>
-                    <td>8:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>8:00 AM</td>
-                    <td>--</td>
-                    <td>5:00 PM</td>
-                    <td>8:00 AM</td>
-                </tr>
-                <tr>
-                    <th>Jane Medina</td>
-                    <td>--</td>
-                    <td>5:00 PM</td>
-                    <td>5:00 PM</td>
-                    <td>--</td>
-                    <td>9:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                </tr>
-                <tr>
-                    <th>Billy Mitchell</td>
-                    <td>9:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>2:00 PM</td>
-                    <td>8:00 AM</td>
-                </tr>
-                <tr>
-                    <th>Beverly Reid</td>
-                    <td>--</td>
-                    <td>5:00 PM</td>
-                    <td>5:00 PM</td>
-                    <td>--</td>
-                    <td>9:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                </tr>
-                <tr>
-                    <th>Tiffany Wade</td>
-                    <td>8:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>8:00 AM</td>
-                    <td>--</td>
-                    <td>5:00 PM</td>
-                    <td>8:00 AM</td>
-                </tr>
-                <tr>
-                    <th>Sean Adams</td>
-                    <td>--</td>
-                    <td>5:00 PM</td>
-                    <td>5:00 PM</td>
-                    <td>--</td>
-                    <td>9:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                </tr>
-                <tr>
-                    <th>Rachel Simpson</td>
-                    <td>9:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>2:00 PM</td>
-                    <td>8:00 AM</td>
-                </tr>
-                <tr>
-                    <th>Mark Salazar</td>
-                    <td>8:00 AM</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>8:00 AM</td>
-                    <td>--</td>
-                    <td>5:00 PM</td>
-                    <td>8:00 AM</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script>
-        $("#body-t2").find("td").click((e) => {
-            $("#body-t2").find("td").removeClass("clicked");
-            $("tr").removeClass("selected-rowcol");
-            $("td").removeClass("selected-rowcol");
+    <hr>
+    <h1>Desordenadas</h1>
+    <hr><b>Desordenada simple con marcas</b>
+    <ul>
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3</li>
+    </ul>
+    <hr><b>Desordenada simple sin marcas. Comienzo en margen izquierdo</b>
+    <ul class="sin-marcas">
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3</li>
+    </ul>
+    <hr><b>Desordenada simple sin marcas. Comienzo una posición a la derecha</b>
+    <ul class="sin-marcas">
+        <li>
+            <ul class="sin-marcas">
+                <li>Linea de texto 1</li>
+                <li>Linea de texto 2</li>
+                <li>Linea de texto 3</li>
+            </ul>
+        </li>
+    </ul>
+    <hr><b>Desordenada simple con marcas. Comienzo una posición a la derecha</b>
+    <ul class="sin-marcas">
+        <li>
+            <ul>
+                <li>Linea de texto 1</li>
+                <li>Linea de texto 2</li>
+                <li>Linea de texto 3</li>
+            </ul>
+        </li>
+    </ul>
+    <hr><b>Desordenada simple sin marcas. Comienzo dos posiciones a la derecha</b>
+    <ul class="sin-marcas">
+        <li>
+            <ul class="sin-marcas">
+                <li>
+                    <ul class="sin-marcas">
+                        <li>Linea de texto 1</li>
+                        <li>Linea de texto 2</li>
+                        <li>Linea de texto 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr><b>Desordenada simple sin marcas. Comienzo tres posiciones a la derecha</b>
+    <ul class="sin-marcas">
+        <li>
+            <ul class="sin-marcas">
+                <li>
+                    <ul class="sin-marcas">
+                        <li>
+                            <ul class="sin-marcas">
+                                <li>Linea de texto 1</li>
+                                <li>Linea de texto 2</li>
+                                <li>Linea de texto 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr><b>Desordenada simple con marcas. Comienzo dos posiciones a la derecha</b>
+    <ul class="sin-marcas">
+        <li>
+            <ul class="sin-marcas">
+                <li>
+                    <ul>
+                        <li>Linea de texto 1</li>
+                        <li>Linea de texto 2</li>
+                        <li>Linea de texto 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr><b>Desordenada con 4 niveles sin marcas</b>
+    <ul class="sin-marcas">
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3
+            <ul class="sin-marcas">
+                <li>Linea de texto 3.1</li>
+                <li>Linea de texto 3.2
+                    <ul class="sin-marcas">
+                        <li>Linea de texto 3.2.1</li>
+                        <li>Linea de texto 3.2.2
+                            <ul class="sin-marcas">
+                                <li>Linea de texto 3.2.2.1</li>
+                                <li>Linea de texto 3.2.2.2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr><b>Ordenada con 4 niveles sin marcas</b>
+    <ul>
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3
+            <ul>
+                <li>Linea de texto 3.1</li>
+                <li>Linea de texto 3.2
+                    <ul>
+                        <li>Linea de texto 3.2.1</li>
+                        <li>Linea de texto 3.2.2
+                            <ul>
+                                <li>Linea de texto 3.2.2.1</li>
+                                <li>Linea de texto 3.2.2.2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h1>Ordenadas</h1>
+    <hr><b>Ordenada simple</b>
+    <ol>
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3</li>
+    </ol>
+    <hr><b>Ordenada con 4 niveles, todos ordenados</b>
+    <ol>
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3
+            <ol>
+                <li>Linea de texto 3.1</li>
+                <li>Linea de texto 3.2
+                    <ol>
+                        <li>Linea de texto 3.2.1</li>
+                        <li>Linea de texto 3.2.2
+                            <ol>
+                                <li>Linea de texto 3.2.2.1</li>
+                                <li>Linea de texto 3.2.2.2</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Linea de texto 4</li>
+    </ol>
+    <hr><b>Ordenada con 4 niveles, todos ordenados. Numeración romana en mayusculas y minusculas</b>
+    <ol type="I">
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3
+            <ol type="i">
+                <li>Linea de texto 3.1</li>
+                <li>Linea de texto 3.2
+                    <ol type="i">
+                        <li>Linea de texto 3.2.1</li>
+                        <li>Linea de texto 3.2.2
+                            <ol>
+                                <li>Linea de texto 3.2.2.1</li>
+                                <li>Linea de texto 3.2.2.2</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Linea de texto 4</li>
+    </ol>
+    <hr><b>Ordenada con 4 niveles, 2 ordenados con marcas</b>
+    <ol>
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3
+            <ol>
+                <li>Linea de texto 3.1</li>
+                <li>Linea de texto 3.2</li>
+            </ol>
+        </li>
+        <ul>
+            <li>Linea de texto 3.2.1</li>
+            <li>Linea de texto 3.2.2
+                <ul>
+                    <li>Linea de texto 3.2.2.1</li>
+                    <li>Linea de texto 3.2.2.2</li>
+                </ul>
+            </li>
 
-            $(e.target).parent().addClass("selected-rowcol");
+        </ul>
+        <li>Linea de texto 4</li>
+    </ol>
+    <hr><b>Ordenada con 4 niveles, 2 ordenados sin marcas</b>
+    <ol>
+        <li>Linea de texto 1</li>
+        <li>Linea de texto 2</li>
+        <li>Linea de texto 3
+            <ol>
+                <li>Linea de texto 3.1</li>
+                <li>Linea de texto 3.2</li>
+            </ol>
+        </li>
+        <ul class="sin-marcas">
+            <li>Linea de texto 3.2.1</li>
+            <li>Linea de texto 3.2.2
+                <ul class="sin-marcas">
+                    <li>Linea de texto 3.2.2.1</li>
+                    <li>Linea de texto 3.2.2.2</li>
+                </ul>
+            </li>
+        </ul>
+        <li>Linea de texto 4</li>
+    </ol>
 
-            let tds = $("#body-t2").find("td");
-
-            for (let i = 0; i < tds.length; i++) {
-                const el = tds[i];
-                if (el.cellIndex == e.target.cellIndex) {
-                    $(el).addClass("selected-rowcol");
-                }
-            }
-
-            $(e.target).addClass("clicked");
-        });
-    </script>
 </body>
 
 </html>
