@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div class="uk-container">
+        <div>
+            <table class="calculadora">
+                <tr>
+                    <td colspan="7">
+                        <label id="display" for="input"></label>
+                        <input id="input" type="text" class="uk-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="calc.addInput('')" class="uk-button uk-button-primary">Rad</button></td>
+                    <td><button onclick="calc.addInput('')" class="uk-button uk-button-primary">Deg</button></td>
+                    <td><button onclick="calc.addOperacion('!', TYPE_FRONT)" class="uk-button uk-button-primary">X!</button></td>
+                    <td><button onclick="calc.addDirectOp('(')" class="uk-button uk-button-primary">(</button></td>
+                    <td><button onclick="calc.addDirectOp(')')" class="uk-button uk-button-primary">)</button></td>
+                    <td><button onclick="calc.addInput('%')" class="uk-button uk-button-primary">%</button></td>
+                    <td><button onclick="calc.clear()" class="uk-button uk-button-primary">AC</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calc.addInput('')" class="uk-button uk-button-primary">Inv</button></td>
+                    <td><button onclick="calc.addInput('sin\(')" class="uk-button uk-button-primary">sin</button></td>
+                    <td><button onclick="calc.addInput('ln\(')" class="uk-button uk-button-primary">ln</button></td>
+                    <td><button onclick="calc.addInput('7')" class="uk-button uk-button-default">7</button></td>
+                    <td><button onclick="calc.addInput('8')" class="uk-button uk-button-default">8</button></td>
+                    <td><button onclick="calc.addInput('9')" class="uk-button uk-button-default">9</button></td>
+                    <td><button onclick="calc.addInput('/')" class="uk-button uk-button-primary">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calc.addInput('pi')" class="uk-button uk-button-primary">&pi;</button></td>
+                    <td><button onclick="calc.addInput('cos\(')" class="uk-button uk-button-primary">cos</button></td>
+                    <td><button onclick="calc.addInput('log\(')" class="uk-button uk-button-primary">log</button></td>
+                    <td><button onclick="calc.addInput('4')" class="uk-button uk-button-default">4</button></td>
+                    <td><button onclick="calc.addInput('5')" class="uk-button uk-button-default">5</button></td>
+                    <td><button onclick="calc.addInput('6')" class="uk-button uk-button-default">6</button></td>
+                    <td><button onclick="calc.addInput('*')" class="uk-button uk-button-primary">X</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="calc.addInput('exp\(')" class="uk-button uk-button-primary">e</button></td>
+                    <td><button onclick="calc.addInput('tan\(')" class="uk-button uk-button-primary">tan</button></td>
+                    <td><button onclick="calc.addInput('sqrt\(')" class="uk-button uk-button-primary">&Sqrt;</button></td>
+                    <td><button onclick="calc.addInput('1')" class="uk-button uk-button-default">1</button></td>
+                    <td><button onclick="calc.addInput('2')" class="uk-button uk-button-default">2</button></td>
+                    <td><button onclick="calc.addInput('3')" class="uk-button uk-button-default">3</button></td>
+                    <td><button onclick="calc.addInput('-')" class="uk-button uk-button-primary">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calc.addInput('')" class="uk-button uk-button-primary">Ans</button></td>
+                    <td><button onclick="calc.addInput('')" class="uk-button uk-button-primary">EXP</button></td>
+                    <td><button onclick="calc.addInput('^\(')" class="uk-button uk-button-primary">X<sup>y</sup></button></td>
+                    <td><button onclick="calc.addInput('.')" class="uk-button uk-button-primary">.</button></td>
+                    <td><button onclick="calc.addInput('0')" class="uk-button uk-button-default">0</button></td>
+                    <td><button onclick="calc.getResultado()" class="uk-button uk-button-danger">=</button></td>
+                    <td><button onclick="calc.addInput('+')" class="uk-button uk-button-primary">+</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

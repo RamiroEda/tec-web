@@ -1,0 +1,13 @@
+tr>td>button {
+    width: 100%;
+    text-transform: inherit !important;
+}
+
+.calculadora {
+    margin: 20px auto 20px auto;
+}
+
+tr>td>input {
+    width: 100%;
+    text-align: end;
+}
