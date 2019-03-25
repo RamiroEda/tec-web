@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="css/uikit.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/uikit.min.js"></script>
@@ -38,7 +38,7 @@
                     <td><button onclick="calc.addInput('7')" class="uk-button uk-button-default">7</button></td>
                     <td><button onclick="calc.addInput('8')" class="uk-button uk-button-default">8</button></td>
                     <td><button onclick="calc.addInput('9')" class="uk-button uk-button-default">9</button></td>
-                    <td><button onclick="calc.addInput('/')" class="uk-button uk-button-primary">/</button></td>
+                    <td><button onclick="calc.addOperacion('/', TYPE_FRONT)" class="uk-button uk-button-primary">/</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="calc.addInput('pi')" class="uk-button uk-button-primary">&pi;</button></td>
@@ -47,7 +47,7 @@
                     <td><button onclick="calc.addInput('4')" class="uk-button uk-button-default">4</button></td>
                     <td><button onclick="calc.addInput('5')" class="uk-button uk-button-default">5</button></td>
                     <td><button onclick="calc.addInput('6')" class="uk-button uk-button-default">6</button></td>
-                    <td><button onclick="calc.addInput('*')" class="uk-button uk-button-primary">X</button></td>
+                    <td><button onclick="calc.addOperacion('*', TYPE_FRONT)" class="uk-button uk-button-primary">X</button></td>
                 </tr>
 
                 <tr>
@@ -57,7 +57,7 @@
                     <td><button onclick="calc.addInput('1')" class="uk-button uk-button-default">1</button></td>
                     <td><button onclick="calc.addInput('2')" class="uk-button uk-button-default">2</button></td>
                     <td><button onclick="calc.addInput('3')" class="uk-button uk-button-default">3</button></td>
-                    <td><button onclick="calc.addInput('-')" class="uk-button uk-button-primary">-</button></td>
+                    <td><button onclick="calc.addOperacion('-', TYPE_FRONT)" class="uk-button uk-button-primary">-</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="calc.addInput('')" class="uk-button uk-button-primary">Ans</button></td>
@@ -66,7 +66,7 @@
                     <td><button onclick="calc.addInput('.')" class="uk-button uk-button-primary">.</button></td>
                     <td><button onclick="calc.addInput('0')" class="uk-button uk-button-default">0</button></td>
                     <td><button onclick="calc.getResultado()" class="uk-button uk-button-danger">=</button></td>
-                    <td><button onclick="calc.addInput('+')" class="uk-button uk-button-primary">+</button></td>
+                    <td><button onclick="calc.addOperacion('+', TYPE_FRONT)" class="uk-button uk-button-primary">+</button></td>
                 </tr>
 
             </table>
